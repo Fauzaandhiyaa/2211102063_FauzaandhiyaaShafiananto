@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e3f2fd;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 6px;
+            width: 48%;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #01579b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Mahasiswa</h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="nim">NIM:</label></td>
+                    <td><input type="text" name="nim" id="nim" /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email" /></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male" />
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" name="gender" value="female" id="female" />
+                        <label for="female">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ttl">Tanggal Lahir:</label></td>
+                    <td><input type="date" name="ttl" id="ttl" /></td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat:</label></td>
+                    <td><textarea name="alamat" id="alamat" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="kota">Tinggal Di:</label></td>
+                    <td>
+                        <select name="kota" id="kota">
+                            <option value="">--pilih--</option>
+                            <option value="kosan">Kosan/kontrakan</option>
+                            <option value="saudara">Rumah saudara</option>
+                            <option value="ortu">Rumah orang tua</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pilih Hobi:</td>
+                    <td>
+                        <input type="checkbox" name="hobi" value="science" id="science" />
+                        <label for="science">Science</label><br>
+                        <input type="checkbox" name="hobi" value="technology" id="technology" />
+                        <label for="technology">Technology</label><br>
+                        <input type="checkbox" name="hobi" value="art" id="art" />
+                        <label for="art">Art</label><br>
+                        <input type="checkbox" name="hobi" value="sport" id="sport" />
+                        <label for="sport">Sport</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="btn-container">
+                        <input type="submit" value="Kirim" />
+                        <input type="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

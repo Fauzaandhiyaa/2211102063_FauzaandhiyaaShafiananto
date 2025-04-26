@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-white">
+    <header class="text-left py-4 px-4">
+      <h1 class="text-5xl font-bold">
+        <span class="text-blue-600">ONLINE</span>
+        <span class="text-yellow-500">MEDIA</span>
+      </h1>
+    </header>
+    <nav class="bg-blue-600">
+      <ul class="flex justify-center space-x-4 py-2 text-white text-sm">
+        <li><a class="hover:underline" href="#">HOME</a></li>
+        <li><a class="hover:underline" href="#">STRATEGY</a></li>
+        <li><a class="hover:underline" href="#">SOLUSI</a></li>
+        <li><a class="hover:underline" href="#">MARKETING</a></li>
+        <li><a class="hover:underline" href="#">WORKSHOP</a></li>
+        <li><a class="hover:underline" href="#">OUR WORK</a></li>
+        <li><a class="hover:underline" href="#">PRODUK</a></li>
+        <li><a class="hover:underline" href="#">PARTNER</a></li>
+        <li><a class="hover:underline" href="#">INSPIRASI</a></li>
+        <li><a class="hover:underline" href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <main class="flex justify-center mt-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-green-500 text-white text-center p-8">
+          <div class="flex justify-center">
+            <i class="fas fa-thermometer-full"></i>
+          </div>
+          <p class="text-xl font-medium">Analytic</p>
+        </div>
+        <div class="bg-orange-500 text-white text-center p-8">
+          <div class="flex justify-center">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <p class="text-xl font-medium">Creative</p>
+        </div>
+        <div class="bg-red-500 text-white text-center p-8">
+          <div class="flex justify-center">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <p class="text-xl font-medium">Development</p>
+        </div>
+        <div class="bg-blue-500 text-white text-center p-8">
+          <div class="flex justify-center">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <p class="text-xl font-medium">Marketing</p>
+        </div>
+        <div class="bg-yellow-500 text-white text-center p-8">
+          <div class="flex justify-center">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <p class="text-xl font-medium">Media</p>
+        </div>
+        <div class="bg-green-600 text-white text-center p-8">
+          <div class="flex justify-center">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <p class="text-xl font-medium">Optimization</p>
+        </div>
+      </div>
+    </main>
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8 px-4"
+    >
+      <button
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full sm:w-auto"
+        onclick="toggleAlignment()"
+      >
+        Ubah Alignment Teks
+      </button>
+      <button
+        class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 w-full sm:w-auto"
+        onclick="toggleColor()"
+      >
+        Ubah Warna Background
+      </button>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+  <footer class="text-center py-4 mt-8 bg-blue-600">
+    <p class="font-medium text-white">Fauzaandhiyaa Shafiananto 2211102063</p>
+  </footer>
+</html>
