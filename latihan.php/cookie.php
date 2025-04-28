@@ -1,0 +1,1 @@
+<?php setcookie("username", "Fauzan", time() + 3600); ?>
